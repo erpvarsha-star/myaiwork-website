@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MY AI Work — We Plug the Leaks in Your Business</title>
 <meta name="description" content="Built by a business owner, for business owners. We find where your business leaks time and money, and plug it with AI. You never touch the tech — but you stay in full control.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MY AI Work — We Plug the Leaks in Your Business">
+<meta property="og:description" content="Built by a business owner, for business owners. We find where your business leaks time and money, and plug it with AI. Pune, India.">
+<meta property="og:url" content="https://myaiwork.netlify.app">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#286d55">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%23286d55'/><text x='32' y='42' font-family='Georgia,serif' font-size='30' font-weight='bold' fill='%23f6dece' text-anchor='middle'>MY</text></svg>">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"MY AI Work","description":"AI automation for business owners — we find where your business leaks time and money, and plug it with AI.","address":{"@type":"PostalAddress","addressLocality":"Pune","addressRegion":"Maharashtra","addressCountry":"IN"},"telephone":"+918411000555","parentOrganization":{"@type":"Organization","name":"Stego Lifestyle LLP"},"priceRange":"₹9,999 – ₹1,50,000+"}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -145,6 +155,10 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
 
 .reveal{opacity:0;transform:translateY(34px);transition:opacity 1s cubic-bezier(.39,.575,.565,1),transform 1s cubic-bezier(.39,.575,.565,1)}
 .reveal.in{opacity:1;transform:translateY(0)}
+
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:200;width:58px;height:58px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.25);transition:transform .25s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
 </style>
 </head>
 <body>
@@ -349,6 +363,12 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
       <a href="https://wa.me/918411000555?text=Hi%2C%20I%20want%20to%20book%20a%20Leak%20Audit" class="btn btn-coral">WhatsApp Us — Book the Audit</a>
       <a href="mailto:hello@myaiwork.in" class="btn btn-green">hello@myaiwork.in</a>
     </div>
+    <!-- GOOGLE CALENDAR WIRING: after Google Workspace is created, generate an
+         Appointment Schedule (calendar.google.com → Create → Appointment schedule,
+         availability 11:00–18:00 Mon–Sat, 20-min slots) and paste the embed/booking
+         link here. The receptionist agent will point qualified leads to this section. -->
+    <div id="calendar-slot" style="margin-top:56px"></div>
+    <p class="reveal" style="margin-top:36px;font-size:14px;color:rgba(34,34,34,.55)">Calls available daily, 11:00 AM – 6:00 PM IST · Owner to owner, 20 minutes, no obligation.</p>
   </div>
 </section>
 
@@ -374,6 +394,10 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
     <span>You never touch the tech. You stay in control.</span>
   </div>
 </footer>
+
+<a class="wa-float" href="https://wa.me/918411000555?text=Hi%2C%20I%20want%20to%20book%20a%20Leak%20Audit" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.4 2.5.7 3.8.7 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 22.5c-1.2 0-2.4-.3-3.5-.7l-.8-.3-4.9.9 1-4.7-.4-.8c-.9-1.5-1.4-3.2-1.4-5 0-5.8 4.7-10.5 10.5-10.5S26.5 9.2 26.5 15 21.8 25.5 16 25.5zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.9-1.7-2.2-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6-.1-.2-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.2 1.3 3.4c.2.2 2.3 3.5 5.5 4.9.8.3 1.4.5 1.8.7.8.2 1.5.2 2 .1.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+</a>
 
 <script>
 const nav=document.getElementById('nav');
