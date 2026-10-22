@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Automation for Small Manufacturing Businesses (India) — Where to Start</title>
+<meta name="description" content="A practical guide to AI automation for Indian manufacturing SMEs — what to automate first, real costs, and what a factory owner got back. No jargon, no ERP pitches.">
+<link rel="canonical" href="https://myaiwork.netlify.app/guides/ai-automation-manufacturing-india">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What should a small manufacturing business automate first with AI?","acceptedAnswer":{"@type":"Answer","text":"Enquiry response and follow-ups. They touch revenue directly, need no integration with factory systems, and typically go live in two weeks. Payment reminders usually come second. Production systems come later — the order matters."}},
+{"@type":"Question","name":"How much does AI automation cost for a small factory in India?","acceptedAnswer":{"@type":"Answer","text":"Fixed-scope automation of one business process (e.g. a WhatsApp enquiry bot) typically costs ₹25,000–45,000 one-time plus modest monthly running costs. Larger multi-process builds run ₹60,000–1,50,000+. Avoid open-ended 'digital transformation' projects."}},
+{"@type":"Question","name":"Do I need an ERP before using AI in my factory?","acceptedAnswer":{"@type":"Answer","text":"No. Most high-payback AI automations — enquiry handling, follow-ups, payment reminders, daily reports — run on WhatsApp and simple spreadsheets. An ERP is not a prerequisite and is often a distraction from the leaks that actually cost money."}}
+]}
+</script>
+<style>
+:root{--green:#286d55;--green-deep:#1d5140;--cream:#f6dece;--beige:#e9e7e1;--coral:#e24e67;--ink:#222222;--serif:'Fraunces',Georgia,serif;--sans:'Archivo',-apple-system,'Segoe UI',sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);color:var(--ink);background:#fff;line-height:1.75;font-size:17px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;letter-spacing:-0.01em}
+.wrap{max-width:780px;margin:0 auto;padding:0 24px}
+nav{padding:20px 0;border-bottom:1px solid rgba(34,34,34,.08)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;max-width:1080px}
+.logo{font-family:var(--serif);font-weight:700;font-size:22px;color:var(--ink);text-decoration:none}
+.logo em{font-style:normal;color:var(--coral)}
+.btn{display:inline-block;font-weight:700;font-size:15px;padding:12px 26px;text-decoration:none;background:var(--coral);color:#fff;transition:background .25s}
+.btn:hover{background:#c93a52}
+.article-head{padding:70px 0 40px;background:var(--beige)}
+.label{font-weight:800;font-size:12px;letter-spacing:5px;text-transform:uppercase;color:var(--green);margin-bottom:18px}
+h1{font-size:clamp(30px,4.5vw,46px);max-width:20ch}
+.meta{margin-top:18px;font-size:14px;color:rgba(34,34,34,.55)}
+.answer{background:#fff;border-left:4px solid var(--coral);padding:24px 28px;margin:36px 0;font-size:18px}
+article{padding:50px 0}
+article h2{font-size:clamp(24px,3.2vw,32px);margin:52px 0 18px}
+article p{margin-bottom:18px}
+article ul,article ol{margin:0 0 20px 22px}
+article li{margin-bottom:10px}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:36px 0;border:1px solid rgba(34,34,34,.14)}
+.stat{padding:26px 20px;border-right:1px solid rgba(34,34,34,.14);text-align:center}
+.stat:last-child{border-right:none}
+.stat .big{font-family:var(--serif);font-size:clamp(26px,3.4vw,36px);font-weight:600;color:var(--coral);line-height:1.1}
+.stat p{font-size:13px;color:rgba(34,34,34,.7);margin:8px 0 0}
+@media(max-width:640px){.stat-row{grid-template-columns:1fr}.stat{border-right:none;border-bottom:1px solid rgba(34,34,34,.14)}.stat:last-child{border-bottom:none}}
+.faq-item{border-top:1px solid rgba(34,34,34,.12);padding:22px 0}
+.faq-item h3{font-size:19px;margin-bottom:8px}
+.cta-band{background:var(--green);color:var(--cream);padding:70px 0;text-align:center}
+.cta-band h2{color:var(--cream);font-size:clamp(26px,3.6vw,38px);max-width:22ch;margin:0 auto 16px}
+.cta-band p{color:rgba(246,222,206,.85);max-width:520px;margin:0 auto 30px}
+footer{background:var(--ink);color:rgba(255,255,255,.6);padding:40px 0;font-size:14px;text-align:center}
+footer a{color:rgba(255,255,255,.8);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.25)}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="/">MY AI <em>Work</em></a><a class="btn" href="/#book">Book a Leak Audit</a></div></nav>
+
+<div class="article-head"><div class="wrap">
+<p class="label">Guide · Manufacturing</p>
+<h1>AI automation for small manufacturing businesses: where to actually start</h1>
+<p class="meta">By Yash M., Founder — I run a manufacturing business in Pune. Everything below was tested in my own operation first.</p>
+</div></div>
+
+<article><div class="wrap">
+
+<div class="answer"><strong>The short answer:</strong> don't start with production. Start with enquiry response and follow-ups — they touch revenue directly, need no integration with factory systems, and go live in about two weeks. Payment reminders come second. The sequence matters more than the technology.</div>
+
+<p>If you run a small factory, every AI pitch you've received probably wanted to sell you a system. This guide is the opposite: it's about the three leaks almost every manufacturing SME has, in the order they should be fixed, with real numbers from a real factory — mine.</p>
+
+<h2>The three leaks, in the order to fix them</h2>
+<p><strong>1. The time leak — you are the bottleneck.</strong> Every enquiry, follow-up and "sir, what do I tell this customer" waits for you. Delayed material, missing workers, angry customers — you start the day firefighting and end it wondering where it went.</p>
+<p><strong>2. The people leak — reliability you can't hire.</strong> Good people are rare and expensive, and your Tuesday depends on who showed up on Monday. When I measured my own team's repetitive work, 40% of it could run on AI — and 25% of everything was just reminders. I was paying salaries for a to-do list with legs.</p>
+<p><strong>3. The money leak — it closes itself.</strong> Missed leads, forgotten follow-ups, quotes sent two days late. This is the leak everyone chases first, and it's actually the <em>result</em> of the first two. Fix time and reliability, and the money leak closes on its own. That's not a promise — it's arithmetic.</p>
+
+<h2>What this looked like in one real factory</h2>
+<div class="stat-row">
+<div class="stat"><div class="big">18 hrs/week</div><p>given back to the owner — work that waited for me now runs without me</p></div>
+<div class="stat"><div class="big">&lt; 60 sec</div><p>enquiry response — earlier it was "next morning, if someone remembered"</p></div>
+<div class="stat"><div class="big">40%</div><p>of repetitive staff work now handled by AI — 25% of it only needed a reminder</p></div>
+</div>
+<p>These are my own numbers from my own business — not a vendor brochure. No ERP was installed, nobody was fired, and nothing took six months.</p>
+
+<h2>The order that works (and the one that fails)</h2>
+<ol>
+<li><strong>Enquiry response bot</strong> — answers in under 60 seconds, 24/7, qualifies the lead, books the meeting. Fastest payback; typically the first build.</li>
+<li><strong>Follow-up + payment reminders</strong> — quotes stop going cold; collections stop depending on someone remembering.</li>
+<li><strong>Daily control report</strong> — one WhatsApp message each evening: leads answered, meetings booked, reminders sent. You never touch the tech, but you see everything.</li>
+<li><strong>Only then:</strong> order status, HR screening, deeper integrations — built on a foundation that already pays for itself.</li>
+</ol>
+<p>The failing order is the reverse: a big "system" first, revenue-facing fixes never. Six months later the owner is an unpaid project manager and the leaks are still open.</p>
+
+<h2>Honest costs</h2>
+<p>One process, fixed scope, live in two weeks: typically ₹25,000–45,000 one-time. Multi-process builds: ₹60,000–1,50,000+. Modest monthly running costs on top. If someone quotes you six months before naming the leak it plugs in week two, that's your answer.</p>
+
+<h2>Frequently asked questions</h2>
+<div class="faq-item"><h3>What should a small factory automate first?</h3><p>Enquiry response and follow-ups. Direct revenue impact, no integration with production systems, live in about two weeks.</p></div>
+<div class="faq-item"><h3>Do I need an ERP first?</h3><p>No. The highest-payback automations run on WhatsApp and simple spreadsheets. An ERP is not a prerequisite — it's usually a distraction from the leaks actually costing you money.</p></div>
+<div class="faq-item"><h3>Will this replace my staff?</h3><p>It replaces their repetitive work, not them. Nobody left my factory. The team finally does the work they were hired for — quality, customers, judgement.</p></div>
+
+</div></article>
+
+<section class="cta-band"><div class="wrap">
+<h2>Find your factory's leaks</h2>
+<p>The Leak Audit maps exactly where your business loses time and money — a written report with real numbers, yours to keep. ₹9,999, refunded if we find nothing.</p>
+<a class="btn" href="https://wa.me/918411000555?text=Hi%2C%20I%20want%20to%20book%20a%20Leak%20Audit">WhatsApp Us — Book the Audit</a>
+</div></section>
+
+<footer><div class="wrap">© 2026 MY AI Work · A venture of Stego Lifestyle LLP, Pune · <a href="/">Home</a></div></footer>
+</body>
+</html>
