@@ -190,6 +190,25 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
 @media(max-width:760px){.proof{grid-template-columns:1fr}.proof-cell{border-right:none;border-bottom:1px solid rgba(34,34,34,.14)}.proof-cell:last-child{border-bottom:none}}
 
 /* floating WhatsApp */
+
+/* ---------- LEAD FORM ---------- */
+.lead-form{margin:46px auto 0;text-align:left;max-width:560px}
+.lead-form .fg{margin-bottom:18px}
+.lead-form label{display:block;font-size:13px;font-weight:700;letter-spacing:1.4px;
+ text-transform:uppercase;color:rgba(34,34,34,.6);margin-bottom:7px}
+.lead-form input,.lead-form textarea{width:100%;font-family:var(--sans);font-size:16px;
+ color:var(--ink);background:var(--white);border:1px solid rgba(34,34,34,.22);
+ padding:13px 15px;transition:border-color .2s}
+.lead-form input:focus,.lead-form textarea:focus{outline:none;border-color:var(--green)}
+.lead-form textarea{resize:vertical;min-height:86px}
+.lead-form button{margin-top:6px;width:100%;font-family:var(--sans);font-weight:700;
+ font-size:16px;padding:16px 34px;border:2px solid transparent;background:var(--green);
+ color:var(--white);cursor:pointer;transition:background .25s}
+.lead-form button:hover{background:var(--green-deep)}
+.lead-form .hp{position:absolute;left:-9999px}
+.form-note{font-size:14px;color:rgba(34,34,34,.55);margin-top:14px}
+.or-line{margin:46px 0 4px;font-size:14px;letter-spacing:3px;text-transform:uppercase;
+ font-weight:700;color:rgba(34,34,34,.4)}
 </style>
 </head>
 <body>
@@ -394,6 +413,31 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
     <div class="hero-ctas reveal">
       <a href="https://wa.me/918411000555?text=Hi%2C%20I%20would%20like%20to%20request%20a%20Leak%20Audit" class="btn btn-coral">Request an Audit on WhatsApp</a>
     </div>
+    <p class="or-line reveal">or leave your details</p>
+
+    <form name="leak-audit" method="POST" data-netlify="true" netlify-honeypot="company-website" action="/thanks.html" class="lead-form reveal">
+      <input type="hidden" name="form-name" value="leak-audit">
+      <p class="hp"><label>Leave this empty: <input name="company-website"></label></p>
+      <div class="fg">
+        <label for="f-name">Your name</label>
+        <input id="f-name" name="name" type="text" required autocomplete="name">
+      </div>
+      <div class="fg">
+        <label for="f-biz">Business &amp; what you make or sell</label>
+        <input id="f-biz" name="business" type="text" required>
+      </div>
+      <div class="fg">
+        <label for="f-phone">WhatsApp number</label>
+        <input id="f-phone" name="whatsapp" type="tel" required inputmode="tel" autocomplete="tel">
+      </div>
+      <div class="fg">
+        <label for="f-leak">What eats the most of your time right now?</label>
+        <textarea id="f-leak" name="leak" required></textarea>
+      </div>
+      <button type="submit">Request the Leak Audit</button>
+      <p class="form-note">We reply within one working day. Owners only — we don't sell to agencies or resellers.</p>
+    </form>
+
     <!-- GOOGLE CALENDAR WIRING: after Google Workspace is created, generate an
          Appointment Schedule (calendar.google.com → Create → Appointment schedule,
          availability 11:00–18:00 Mon–Sat, 20-min slots) and paste the embed/booking
