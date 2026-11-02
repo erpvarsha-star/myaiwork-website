@@ -17,12 +17,16 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#286d55">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%23286d55'/><text x='32' y='42' font-family='Georgia,serif' font-size='30' font-weight='bold' fill='%23f6dece' text-anchor='middle'>MY</text></svg>">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512.png">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"MY AI Work","description":"AI automation for business owners — we find where your business leaks time and money, and close it with AI.","address":{"@type":"PostalAddress","addressLocality":"Pune","addressRegion":"Maharashtra","addressCountry":"IN"},"telephone":"+918411000555","priceRange":"₹9,999 – ₹1,00,000"}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script defer data-domain="myaiwork.in" src="https://plausible.io/js/script.js"></script>
 <style>
 :root{
   --green:#286d55;
@@ -210,6 +214,15 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
 .form-note{font-size:14px;color:rgba(34,34,34,.55);margin-top:14px}
 .or-line{margin:46px 0 4px;font-size:14px;letter-spacing:3px;text-transform:uppercase;
  font-weight:700;color:rgba(34,34,34,.4)}
+
+/* ---------- methodology ---------- */
+.methodology{background:var(--ink);color:var(--cream);padding:70px 50px;margin-top:10px}
+.methodology .seq{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin:28px 0;font-family:var(--serif);font-size:clamp(22px,3.4vw,34px);font-weight:600}
+.methodology .seq span{color:rgba(246,222,206,.35)}
+.methodology .seq b{color:var(--cream);font-weight:600}
+.methodology .seq .arrow{color:var(--coral);font-size:.7em}
+.methodology p{color:rgba(246,222,206,.82);max-width:640px;font-size:16px;line-height:1.8}
+@media(max-width:640px){.methodology{padding:50px 28px}}
 </style>
 </head>
 <body>
@@ -221,7 +234,7 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
       <a href="#owner">The Owner</a>
       <a href="#leaks">The Leaks</a>
       <a href="#pricing">Pricing</a>
-      <a href="#workshop">Workshop</a>
+      <a href="/workshop">Workshop</a>
       <a href="#book" class="btn nav-cta">Request a Leak Audit</a>
     </div>
   </div>
@@ -313,6 +326,20 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
   </div>
 </section>
 
+
+<!-- METHODOLOGY -->
+<section class="sec-beige">
+  <div class="wrap-narrow">
+    <p class="label reveal">Our method</p>
+    <div class="methodology reveal">
+      <p class="label" style="color:var(--coral)">Our sequence</p>
+      <div class="seq"><b>Time</b><span class="arrow">&rarr;</span><b>People</b><span class="arrow">&rarr;</span><b>Money</b></div>
+      <p>Most owners chase the money leak first. We start with Time and People. When those two are closed, the money leak usually closes as a consequence.</p>
+      <p style="margin-top:14px">This sequence is how we decide what to fix first in every audit.</p>
+    </div>
+  </div>
+</section>
+
 <!-- HOW IT WORKS -->
 <section id="how" class="sec-beige">
   <div class="wrap">
@@ -350,6 +377,7 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
     <p class="lead reveal">A <strong>Leak Audit is ₹9,999</strong> — two hours with us, and a written report with your numbers in it, whether you go ahead or not. If we find nothing worth fixing, you get it back.</p>
     <p class="lead reveal">Builds run between <strong>₹35,000 and ₹1,00,000</strong> depending on what the audit finds, with <strong>₹8,000 a month</strong> for the daily report that keeps it honest. We scope it after we&rsquo;ve seen your business, not before. Half to start, half when it goes live, and the audit fee comes off the build.</p>
     <p class="lead reveal">We don&rsquo;t bill by the hour, and we don&rsquo;t take on open-ended projects.</p>
+    <p class="lead reveal" style="font-size:16px;color:rgba(34,34,34,.65)">Typical payback: 4&ndash;8 weeks for a single clear leak, 6&ndash;10 weeks when two or three related leaks are closed together. For a full operations build, payback depends on the size of the leaks the audit finds.</p>
     <p class="terms-line reveal">You didn&rsquo;t spend years learning AI. We did. That is what the price is for.</p>
   </div>
 </section>
@@ -369,6 +397,7 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
       <div class="dash-row"><span>Payment reminders delivered</span><b>6</b></div>
       <div class="dash-row"><span>Leads that would have gone cold</span><b class="up">0 lost</b></div>
     </div>
+    <p class="reveal" style="text-align:center;margin-top:18px;font-size:13px;color:rgba(246,222,206,.55)">Illustrative example &mdash; this is the format of the report, not a live client's numbers.</p>
   </div>
 </section>
 
@@ -385,23 +414,24 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
       <div class="workshop-card reveal">
         <h3>Next session: Pune &middot; 90 minutes, no charge</h3>
         <p>Business owners only — no students, no job-seekers, no agencies. Dates are announced on WhatsApp first.</p>
-        <a href="https://wa.me/918411000555?text=Hi%2C%20add%20me%20to%20the%20workshop%20list" class="btn btn-outline" style="width:100%;text-align:center">Ask about the next session</a>
+        <a href="https://wa.me/918411000555?text=Hi%2C%20add%20me%20to%20the%20workshop%20list&utm_source=site&utm_medium=whatsapp&utm_campaign=workshop&utm_content=home_teaser" class="btn btn-outline" style="width:100%;text-align:center">Ask about the next session</a>
+        <p style="margin-top:16px;font-size:14px"><a href="/workshop" style="color:var(--cream);border-bottom:1px solid rgba(246,222,206,.4)">Full workshop details &rarr;</a></p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- HONEST FILTER -->
+<!-- SELECTIVE ON PURPOSE -->
 <section class="sec-green">
   <div class="wrap-narrow">
-    <p class="label reveal">Fair warning</p>
-    <h2 class="reveal">We're not for everyone. Deliberately.</h2>
+    <p class="label reveal">Selective on purpose</p>
+    <h2 class="reveal">We're selective on purpose.</h2>
     <div class="filter-list">
-      <div class="filter-item reveal"><div class="x">✕</div><p><strong>If you want to negotiate every rupee</strong> — we're not your people. Our time isn't cheap, and neither is yours. That's the point.</p></div>
-      <div class="filter-item reveal"><div class="x">✕</div><p><strong>If you want daily status calls</strong> — your daily report replaces them. We build, you watch the numbers.</p></div>
-      <div class="filter-item reveal"><div class="x">✕</div><p><strong>If you want a custom ERP in 6 months</strong> — call the IT companies filling your spam folder. We close one leak in 2 weeks and leave the rest of your business alone.</p></div>
-      <div class="filter-item reveal"><div class="x">✓</div><p><strong>If you're an owner who wants the leak gone</strong> — without touching the tech, without losing control — let's talk.</p></div>
+      <div class="filter-item reveal"><div class="x">&#10005;</div><p>This is not a fit if you are looking for the cheapest option or want to negotiate every rupee. Our fees are set against the hours and leads you get back &mdash; not against the cheapest quote.</p></div>
+      <div class="filter-item reveal"><div class="x">&#10005;</div><p>This is also not a fit if you want daily status calls or a long custom software project.</p></div>
+      <div class="filter-item reveal"><div class="x">&#10003;</div><p>We work best with owners who want the leak closed, want to stay in control, and prefer a clear fixed scope over endless work.</p></div>
     </div>
+    <p class="lead reveal" style="margin-top:40px">If that sounds like you, let's talk.</p>
   </div>
 </section>
 
@@ -411,8 +441,9 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
     <p class="label reveal">Start here</p>
     <h2 class="reveal">Find your leaks before your competitor finds theirs.</h2>
     <p class="reveal">Request a Leak Audit. If we can't show you where your business is losing time or money, we refund every rupee. That's how sure we are.</p>
+    <p class="reveal" style="font-size:14px;color:rgba(34,34,34,.6);margin-top:14px">After we confirm your slot, you&rsquo;ll receive a secure payment link for the &#8377;9,999 refundable audit fee. You can pay by UPI, card, or netbanking. If we find no meaningful leaks, the full amount is refunded within 5&ndash;7 working days of written confirmation.</p>
     <div class="hero-ctas reveal">
-      <a href="https://wa.me/918411000555?text=Hi%2C%20I%20would%20like%20to%20request%20a%20Leak%20Audit" class="btn btn-coral">Request an Audit on WhatsApp</a>
+      <a href="https://wa.me/918411000555?text=Hi%2C%20I%20would%20like%20to%20request%20a%20Leak%20Audit&utm_source=site&utm_medium=whatsapp&utm_campaign=leak_audit&utm_content=final_cta" class="btn btn-coral">Request an Audit on WhatsApp</a>
     </div>
     <p class="or-line reveal">or leave your details</p>
 
@@ -449,21 +480,59 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
   </div>
 </section>
 
+
+
+<!--
+TESTIMONIALS SECTION — BUILT, NOT PUBLISHED.
+Per brief Section 6: quote text is fixed and must be published exactly as
+written, not rewritten. Clients approve wording + consent to attribution
+only. Do not uncomment until the owner has written approval for each one.
+
+<section class="sec-beige">
+  <div class="wrap-narrow">
+    <p class="label reveal">What owners say</p>
+    <h2 class="reveal">Owners who've been through it</h2>
+
+    <div class="faq-item reveal">
+      <p style="font-size:18px;font-style:italic">"We were losing good enquiries simply because no one replied fast enough after hours. Within two weeks of going live, response time dropped dramatically and I stopped being the person who had to check the phone every night. The daily report is the part I value most — I can see exactly what happened without logging into anything."</p>
+      <p style="margin-top:14px;font-weight:600">— [ CLIENT NAME — pending written approval ], Manufacturing Owner, Pune</p>
+    </div>
+
+    <div class="faq-item reveal">
+      <p style="font-size:18px;font-style:italic">"I was sceptical about another 'AI' promise. What changed my mind was that the founder spoke like an owner, not a vendor. The system they built actually fits how we work. Follow-ups that used to slip now happen automatically, and I get a clear summary every evening."</p>
+      <p style="margin-top:14px;font-weight:600">— [ CLIENT NAME — pending written approval ], Business Owner, Pune</p>
+    </div>
+
+    <div class="faq-item reveal">
+      <p style="font-size:18px;font-style:italic">"Simple, fast, and I never had to touch the technical side. That was the deciding factor for me."</p>
+      <p style="margin-top:14px;font-weight:600">— [ CLIENT NAME — pending written approval ], Owner, Services Business</p>
+    </div>
+  </div>
+</section>
+
+END TESTIMONIALS SECTION -->
+
 <footer>
   <div class="wrap">
     <div>
       <div class="f-logo">MY AI <em>Work</em></div>
-      <p style="margin-top:10px;max-width:300px">AI that plugs business leaks.<br>Built by owners, for owners.</p>
+      <p style="margin-top:10px;max-width:300px">AI that closes business leaks.<br>Built by owners, for owners.</p>
     </div>
     <div>
       <p><a href="#leaks">The Leaks</a></p>
       <p style="margin-top:8px"><a href="#pricing">Pricing</a></p>
-      <p style="margin-top:8px"><a href="#workshop">Free Workshop</a></p>
+      <p style="margin-top:8px"><a href="/workshop">Workshop</a></p>
+      <p style="margin-top:8px"><a href="/leak-audit">The Leak Audit</a></p>
+      <p style="margin-top:8px"><a href="/whatsapp-ai-for-business">WhatsApp AI</a></p>
+      <p style="margin-top:8px"><a href="/ai-for-business-owners">AI for Owners</a></p>
     </div>
     <div>
-      <p>Pune, Maharashtra, India</p>
+      <p>MY AI Work</p>
+      <p style="margin-top:4px;opacity:.75;font-size:13px">A venture of Stego Lifestyle LLP</p>
+      <p style="margin-top:8px">Pune, Maharashtra, India</p>
       <p style="margin-top:8px"><a href="https://wa.me/918411000555">Talk to the owner: +91 84110 00555</a></p>
       <p style="margin-top:8px"><a href="mailto:hello@myaiwork.in">hello@myaiwork.in</a></p>
+      <p style="margin-top:8px"><a href="/privacy">Privacy</a> &nbsp;&middot;&nbsp; <a href="/terms">Terms</a></p>
     </div>
   </div>
   <div class="f-bottom">
