@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MY AI Work — We Close Business Leaks, Owner to Owner</title>
-<meta name="description" content="Built by business owners, for business owners. We find where a business leaks time and money, and close it with AI. You never touch the tech — but you stay in full control.">
+<title>MY AI Work — We Close Business Bottlenecks, Owner to Owner</title>
+<meta name="description" content="Built by business owners, for business owners. We find where a business is bottlenecked, and close it with AI. You never touch the tech — but you stay in full control.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="MY AI Work — We Close Business Leaks, Owner to Owner">
+<meta property="og:title" content="MY AI Work — We Close Business Bottlenecks, Owner to Owner">
 <meta property="og:image" content="https://myaiwork.netlify.app/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Every business is leaking somewhere. We found ours.">
-<meta property="og:description" content="Built by business owners, for business owners. We find where a business leaks time and money, and close it with AI. Pune, India.">
+<meta property="og:image:alt" content="Close the bottlenecks costing you time and money.">
+<meta property="og:description" content="Built by business owners, for business owners. We find where a business is bottlenecked, and close it with AI. Pune, India.">
 <link rel="canonical" href="https://myaiwork.netlify.app/">
 <meta property="og:url" content="https://myaiwork.netlify.app">
 <meta name="twitter:card" content="summary_large_image">
@@ -21,7 +21,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"MY AI Work","description":"AI automation for business owners — we find where a business leaks time and money, and close it with AI.","address":{"@type":"PostalAddress","addressLocality":"Pune","addressRegion":"Maharashtra","addressCountry":"IN"},"telephone":"+918411000555","priceRange":"₹9,999 – ₹1,00,000"}
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"MY AI Work","description":"AI automation for business owners — we find where a business is bottlenecked, and close it with AI.","address":{"@type":"PostalAddress","addressLocality":"Pune","addressRegion":"Maharashtra","addressCountry":"IN"},"telephone":"+918411000555","priceRange":"₹9,999 – ₹1,00,000"}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,9 +98,10 @@ section{padding:110px 0}
 .sec-green h2{color:var(--cream)}
 h2{font-size:clamp(32px,4.6vw,52px);max-width:20ch;margin-bottom:26px}
 .lead{font-size:19px;line-height:1.8;max-width:640px}
+.offer-tier{margin-bottom:22px;display:block}
 .sec-green .lead{color:rgba(246,222,206,.88)}
 
-/* leak story — sticky panels */
+/* bottleneck story — sticky panels */
 .story-step{display:flex;gap:60px;align-items:flex-start;padding:44px 0;border-top:1px solid rgba(34,34,34,.14)}
 .story-num{font-family:var(--serif);font-size:15px;font-weight:600;color:var(--coral);min-width:44px;padding-top:8px}
 .story-step h3{font-size:clamp(24px,3vw,34px);margin-bottom:14px}
@@ -223,6 +224,33 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
 .methodology .seq .arrow{color:var(--coral);font-size:.7em}
 .methodology p{color:rgba(246,222,206,.82);max-width:640px;font-size:16px;line-height:1.8}
 @media(max-width:640px){.methodology{padding:50px 28px}}
+
+/* ---------- V3: before/after, ROI box, sample report, img fallback ---------- */
+.ba-table{margin-top:40px;border:1px solid rgba(34,34,34,.14);background:var(--white)}
+.ba-row{display:grid;grid-template-columns:1.1fr 1fr 1fr;border-top:1px solid rgba(34,34,34,.14)}
+.ba-row:first-child{border-top:none}
+.ba-row span{padding:16px 18px;font-size:15px}
+.ba-row span:first-child{font-weight:700;color:var(--ink)}
+.ba-row span:nth-child(2){color:rgba(34,34,34,.55)}
+.ba-row span:nth-child(3){color:var(--green);font-weight:600}
+.ba-head{background:var(--ink)}
+.ba-head span{color:var(--cream)!important;font-weight:800!important;font-size:12px!important;letter-spacing:1px;text-transform:uppercase}
+@media(max-width:640px){.ba-row{grid-template-columns:1fr}.ba-row span{padding:10px 18px}.ba-row span:first-child{padding-top:16px;background:rgba(34,34,34,.03)}}
+
+.roi-box{background:var(--beige);border-left:4px solid var(--green);padding:28px 30px;margin:34px 0}
+.roi-box p{margin-bottom:10px;font-size:15px;color:rgba(34,34,34,.8)}
+.roi-box p:last-child{margin-bottom:0}
+
+.sample-report{margin-top:30px;border:1px solid rgba(34,34,34,.14);background:var(--white)}
+.sr-row{display:flex;justify-content:space-between;gap:20px;padding:14px 20px;border-top:1px solid rgba(34,34,34,.1)}
+.sr-row:first-child{border-top:none}
+.sr-row span{font-size:13px;letter-spacing:.5px;text-transform:uppercase;color:rgba(34,34,34,.5);min-width:180px}
+.sr-row b{font-weight:600;text-align:right;color:var(--ink)}
+@media(max-width:640px){.sr-row{flex-direction:column;gap:4px}.sr-row b{text-align:left}}
+
+.owner-photo.img-fallback{background:var(--beige)}
+.owner-photo.img-fallback img{display:none}
+.owner-photo.img-fallback::after{content:'MY AI Work';font-family:var(--serif);font-size:20px;color:rgba(34,34,34,.3)}
 </style>
 </head>
 <body>
@@ -232,10 +260,11 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
     <a class="logo" href="#top">MY AI <em>Work</em></a>
     <div class="nav-links">
       <a href="#owner">The Owner</a>
-      <a href="#leaks">The Leaks</a>
+      <a href="#bottlenecks">The Bottlenecks</a>
       <a href="#pricing">Pricing</a>
       <a href="/workshop">Workshop</a>
-      <a href="#book" class="btn nav-cta">Request a Leak Audit</a>
+      <a href="/insights">Insights</a>
+      <a href="#book" class="btn nav-cta">Book an Operations Audit</a>
     </div>
   </div>
 </nav>
@@ -244,101 +273,75 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
 <header class="hero" id="top">
   <div class="wrap hero-inner">
     <p class="label fade-up d1">Pune &nbsp;·&nbsp; Built by business owners</p>
-    <h1 class="fade-up d2">Every business is <span class="underline-word">leaking<svg viewBox="0 0 120 14" preserveAspectRatio="none"><path id="heroUnderline" d="M2 10 C 30 4, 60 12, 118 6"/></svg></span> somewhere.<br>We found ours. We closed it with AI.</h1>
-    <p class="hero-sub fade-up d3">We run businesses ourselves. We learned AI the hard way — as owners, not engineers. We found where our own business leaked time and money, closed it with AI, and now help other owners do the same. <strong>You never touch the tech.</strong></p>
+    <h1 class="fade-up d2">Close the <span class="underline-word">bottlenecks<svg viewBox="0 0 120 14" preserveAspectRatio="none"><path id="heroUnderline" d="M2 10 C 30 4, 60 12, 118 6"/></svg></span> that quietly cost your business time, leads, and money.</h1>
+    <p class="hero-sub fade-up d3">Practical AI systems for manufacturing and operations owners &mdash; built by an owner who has already done it in his own business.</p>
+    <p class="hero-sub fade-up d3" style="font-size:15px;opacity:.8;margin-top:-20px">&#8377;9,999 Operations Audit &middot; Fixed-scope AI build &middot; 2-week go-live</p>
     <div class="hero-ctas fade-up d4">
-      <a href="#book" class="btn btn-coral">Request a Leak Audit — ₹9,999</a>
+      <a href="#book" class="btn btn-coral">Book an Operations Audit — ₹9,999</a>
+      <a href="#sample-report" class="hero-link">see a sample audit report &rarr;</a>
     </div>
+    <p class="fade-up d4" style="font-size:13px;color:rgba(246,222,206,.6);margin-top:10px">We will confirm your exact slot manually on WhatsApp.</p>
     <div class="hero-tag fade-up d4">
       <span><strong>2-week</strong> go-live, not 6 months</span>
       <span><strong>Fixed scope</strong>, no never-ending projects</span>
       <span><strong>You stay</strong> in control, always</span>
+      <span>You never touch the tech. You see everything it does on a daily WhatsApp report.</span>
     </div>
   </div>
 </header>
 
-<!-- OWNER + PROOF -->
-<section id="owner" class="sec-beige">
-  <div class="wrap">
-    <div class="owner-grid">
-      <div class="owner-photo reveal">
-        <img id="ownerImg" alt="The owner of MY AI Work">
-      </div>
-      <div class="owner-copy reveal">
-        <p class="label">Who you are dealing with</p>
-        <h3>I'm not an AI salesman. I'm a business owner who got tired of leaking.</h3>
-        <p>I run a manufacturing business in Pune — Stego Lifestyle LLP.</p>
-        <p>Every leak on this site — the 9pm enquiry, the inconsistent follow-up, the owner-as-bottleneck — I have lived, measured, and closed in my own business first.</p>
-        <p>Only after the systems were working in my operation did I start MY AI Work.</p>
-        <p>So when we sit for a Leak Audit, it is not a consultant with a slide deck. It is one owner showing another owner what actually worked.</p>
-        <p class="owner-sign">— Founder, Stego Lifestyle LLP &amp; MY AI Work, Pune</p>
-      </div>
-    </div>
-
-    <div class="proof reveal">
-      <div class="proof-cell">
-        <div class="big">18 hrs/week</div>
-        <p>given back to the owner — work that used to wait for me now runs without me</p>
-      </div>
-      <div class="proof-cell">
-        <div class="big">&lt; 60 sec</div>
-        <p>enquiry response time — earlier it was "next morning, if someone remembered"</p>
-      </div>
-      <div class="proof-cell">
-        <div class="big">40%</div>
-        <p>of repetitive staff work now handled by AI — of which 25% only needed a reminder to complete. The team does what only humans should.</p>
-      </div>
-    </div>
-    
-  </div>
-</section>
-
-
-<!-- RESULTS FOR OTHER OWNERS (held out — Section 5) -->
-<section class="sec-beige" style="padding:70px 0">
-  <div class="wrap-narrow" style="text-align:center">
-    <p class="label reveal">Results for other owners</p>
-    <p class="lead reveal" style="max-width:600px;margin:0 auto">Client results will be published here as they are confirmed and approved.</p>
-    <p class="lead reveal" style="max-width:600px;margin:14px auto 0;font-size:16px;color:rgba(34,34,34,.65)">In the meantime, the only numbers on this site are our own &mdash; measured in our business, before we started MY AI Work.</p>
-  </div>
-</section>
-
-<!-- THE LEAKS -->
-<section id="leaks">
+<!-- THE BOTTLENECKS -->
+<section id="bottlenecks">
   <div class="wrap-narrow">
-    <p class="label reveal">The three leaks</p>
-    <h2 class="reveal">Every business leaks from the same three places.</h2>
-    <p class="lead reveal">We know, because our own business leaked from all three. Here is the order they actually work in — and why fixing them in the right order changes everything.</p>
+    <p class="label reveal">The three bottlenecks</p>
+    <h2 class="reveal">Every business hits the same three bottlenecks.</h2>
+    <p class="lead reveal">We know, because our own business was bottlenecked in all three. Here is the order they actually work in &mdash; and why fixing them in the right order changes everything.</p>
 
     <div class="story-step reveal">
       <div class="story-num">01</div>
       <div>
-        <h3>The Time Leak — the owner becomes the bottleneck</h3>
-        <p>The 9pm enquiry waits until morning. Approvals wait. Delayed material, missing workers, angry customers — nothing moves until one person moves. The business runs only as fast as its owner can personally run.</p>
-        <p class="payoff">→ AI answers, follows up, and chases — 24/7, without you.</p>
+        <h3>The Time Bottleneck &mdash; one person holds up everything</h3>
+        <p>Approvals, enquiries, and follow-ups wait for one person. The 9pm enquiry waits until morning. Delayed material, missing workers, angry customers &mdash; nothing moves until one person moves.</p>
+        <p class="payoff">&rarr; AI answers, follows up, and chases &mdash; 24/7, without you.</p>
       </div>
     </div>
 
     <div class="story-step reveal">
       <div class="story-num">02</div>
       <div>
-        <h3>The People Leak — reliability that is hard to hire</h3>
-        <p>Follow-ups depend on who showed up that day. Capable staff, inconsistent process — hire, train, hope, and the quality of a Tuesday still depends on who showed up on Monday. Good people are rare, and the rare ones are expensive.</p>
-        <p class="payoff">→ AI does the repetitive work of 1–2 junior staff. No leave, no drama, no notice period.</p>
+        <h3>The Reliability Bottleneck &mdash; results depend on who showed up today</h3>
+        <p>Good intentions do not create consistent follow-through. Hire, train, hope &mdash; and the quality of a Tuesday still depends on who showed up on Monday. Good people are rare, and the rare ones are expensive.</p>
+        <p class="payoff">&rarr; AI does the repetitive work consistently. No leave, no drama, no notice period.</p>
       </div>
     </div>
 
     <div class="story-step reveal">
       <div class="story-num">03</div>
       <div>
-        <h3>The Money Leak — it closes itself</h3>
-        <p>Missed leads. Forgotten follow-ups. Quotes sent two days late. This is the leak everyone chases first — and it's actually the <em>result</em> of the first two. Close the time leak and the people leak, and the money leak closes on its own.</p>
-        <p class="payoff">→ That's not a promise. It's arithmetic.</p>
+        <h3>The Revenue Bottleneck &mdash; the result of the first two</h3>
+        <p>Leads go cold, quotes go late, and payment reminders are forgotten. This is the bottleneck everyone chases first &mdash; and it's actually the <em>result</em> of the first two.</p>
+        <p class="payoff">&rarr; We fix Time and Reliability first. Revenue usually improves as a consequence.</p>
       </div>
     </div>
   </div>
 </section>
 
+
+<!-- BEFORE / AFTER -->
+<section class="sec-beige">
+  <div class="wrap-narrow">
+    <p class="label reveal">What changed, in our own business</p>
+    <h2 class="reveal">Before and after, measured.</h2>
+    <div class="ba-table reveal">
+      <div class="ba-row ba-head"><span>Bottleneck</span><span>Before MY AI Work</span><span>After MY AI Work</span></div>
+      <div class="ba-row"><span>Enquiry response</span><span>Next morning, if remembered</span><span>Within 60 seconds</span></div>
+      <div class="ba-row"><span>Owner time spent chasing work</span><span>Hours daily</span><span>18 hours/week returned</span></div>
+      <div class="ba-row"><span>Repetitive staff work</span><span>Manual, inconsistent</span><span>40% handled by AI</span></div>
+      <div class="ba-row"><span>Follow-ups</span><span>Depends on who is available</span><span>Automated and tracked</span></div>
+    </div>
+    <p class="reveal" style="margin-top:18px;font-size:13px;color:rgba(34,34,34,.5)">These are results from our own manufacturing business. Client results will be published only after written approval.</p>
+  </div>
+</section>
 
 <!-- METHODOLOGY -->
 <section class="sec-beige">
@@ -346,38 +349,9 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
     <p class="label reveal">Our method</p>
     <div class="methodology reveal">
       <p class="label" style="color:var(--coral)">Our sequence</p>
-      <div class="seq"><b>Time</b><span class="arrow">&rarr;</span><b>People</b><span class="arrow">&rarr;</span><b>Money</b></div>
-      <p>Most owners chase the money leak first. We start with Time and People. When those two are closed, the money leak usually closes as a consequence.</p>
+      <div class="seq"><b>Time</b><span class="arrow">&rarr;</span><b>Reliability</b><span class="arrow">&rarr;</span><b>Revenue</b></div>
+      <p>We fix Time and Reliability first. Revenue usually improves as a consequence.</p>
       <p style="margin-top:14px">This sequence is how we decide what to fix first in every audit.</p>
-    </div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section id="how" class="sec-beige">
-  <div class="wrap">
-    <p class="label reveal">How it works</p>
-    <h2 class="reveal">Three steps. Two weeks. Zero tech headache for you.</h2>
-
-    <div class="steps reveal">
-      <div class="step">
-        <div class="n">1</div>
-        <h3>The Leak Audit</h3>
-        <p>We sit with you — owner to owner — and map exactly where a business loses time and money. You get a written report with your numbers in it, whether you go ahead with us or not.</p>
-        <span class="price-tag">₹9,999 · Credited against the build · Refunded if we find nothing</span>
-      </div>
-      <div class="step">
-        <div class="n">2</div>
-        <h3>We Build It</h3>
-        <p>Fixed scope, fixed price, two weeks. We build only what the audit says will pay back fastest — nothing more. We don't touch your existing systems and we don't reinvent what already works.</p>
-        <span class="price-tag">50% advance · 50% on go-live</span>
-      </div>
-      <div class="step">
-        <div class="n">3</div>
-        <h3>You Stay in Control</h3>
-        <p>A simple daily report — on WhatsApp if you like — shows exactly what your AI did: leads answered, visits booked, follow-ups sent. Full visibility. Zero effort.</p>
-        <span class="price-tag">Retainer from ₹8,000/month</span>
-      </div>
     </div>
   </div>
 </section>
@@ -387,11 +361,53 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
   <div class="wrap-narrow">
     <p class="label reveal">What this costs</p>
     <h2 class="reveal">Priced per fix. Not per hour. Not per &ldquo;project&rdquo;.</h2>
-    <p class="lead reveal">A <strong>Leak Audit is ₹9,999</strong> — two hours with us, and a written report with your numbers in it, whether you go ahead or not. If we find nothing worth fixing, you get it back.</p>
-    <p class="lead reveal">Builds run between <strong>₹35,000 and ₹1,00,000</strong> depending on what the audit finds, with <strong>₹8,000 a month</strong> for the daily report that keeps it honest. We scope it after we&rsquo;ve seen the business, not before. Half to start, half when it goes live, and the audit fee comes off the build.</p>
+
+    <p class="lead reveal offer-tier"><strong>The Operations Audit &mdash; &#8377;9,999.</strong> For the owner who knows something is bottlenecked but cannot name it. A 2-hour working session, owner to owner. You receive a written report with your numbers, your three highest-payback AI opportunities, and a fixed-price recommendation. The full &#8377;9,999 is credited toward any AI build started within 90 days of the audit. If we cannot find a meaningful bottleneck, we refund every rupee.</p>
+
+    <p class="lead reveal offer-tier"><strong>The Fixed Build &mdash; &#8377;35,000 to &#8377;1,00,000.</strong> For the owner who has mapped the bottlenecks and wants them closed. Fixed scope, fixed price, agreed before work starts. Live in about two weeks. Typical payback: 4&ndash;8 weeks for a single-bottleneck build. Half to start, half when it goes live.</p>
+
+    <p class="lead reveal offer-tier"><strong>Full Operations Retainer &mdash; from &#8377;8,000/month.</strong> For the owner who wants the system managed for them. We monitor performance, fix issues, and send the daily WhatsApp report.</p>
+
     <p class="lead reveal">We don&rsquo;t bill by the hour, and we don&rsquo;t take on open-ended projects.</p>
-    <p class="lead reveal" style="font-size:16px;color:rgba(34,34,34,.65)">Typical payback: 4&ndash;8 weeks for a single clear leak, 6&ndash;10 weeks when two or three related leaks are closed together. For a full operations build, payback depends on the size of the leaks the audit finds.</p>
+
+    <div class="roi-box reveal">
+      <p class="label" style="color:var(--green);margin-bottom:10px">How we calculate payback</p>
+      <p>We do not promise a number we cannot verify. During the audit, we calculate your specific payback using this formula:</p>
+      <p style="font-family:var(--serif);font-size:17px;margin:14px 0">(Hours lost per month &times; hourly cost) + (Missed leads per month &times; average lead value) = Cost of the bottleneck</p>
+      <p>Most single-bottleneck builds are designed to cost less than 4&ndash;8 weeks of that bottleneck.</p>
+    </div>
+
     <p class="terms-line reveal">You didn&rsquo;t spend years learning AI. We did. That is what the price is for.</p>
+  </div>
+</section>
+
+<!-- SAMPLE AUDIT REPORT -->
+<section id="sample-report" class="sec-beige">
+  <div class="wrap-narrow">
+    <p class="label reveal">What the audit produces</p>
+    <h2 class="reveal">A sample audit report.</h2>
+    <p class="lead reveal">This is what the deliverable looks like &mdash; before you decide whether to build anything.</p>
+
+    <div class="sample-report reveal">
+      <div class="sr-row"><span>Business</span><b>Anonymous Pune manufacturer</b></div>
+      <div class="sr-row"><span>Bottleneck found</span><b>34 enquiries/month received after working hours</b></div>
+      <div class="sr-row"><span>Current response time</span><b>6&ndash;18 hours</b></div>
+      <div class="sr-row"><span>AI fix</span><b>Instant WhatsApp acknowledgement, qualification questions, appointment booking, owner alert for hot leads</b></div>
+      <div class="sr-row"><span>Estimated recovered owner time</span><b>7&ndash;10 hours/month</b></div>
+      <div class="sr-row"><span>Estimated revenue exposure</span><b>&#8377;1.2&ndash;&#8377;4.5 lakh/month</b></div>
+      <div class="sr-row"><span>Recommended build</span><b>Fixed-price WhatsApp Lead Response System</b></div>
+      <div class="sr-row"><span>Payback estimate</span><b>3&ndash;6 weeks</b></div>
+    </div>
+    <p class="reveal" style="margin-top:16px;font-size:13px;color:rgba(34,34,34,.5)">Illustrative example based on our own business. Your report will use your numbers.</p>
+  </div>
+</section>
+
+<!-- RESULTS FOR OTHER OWNERS (held out — Section 5) -->
+<section class="sec-beige" style="padding:70px 0">
+  <div class="wrap-narrow" style="text-align:center">
+    <p class="label reveal">Results for other owners</p>
+    <p class="lead reveal" style="max-width:600px;margin:0 auto">Client results will be published here as they are confirmed and approved.</p>
+    <p class="lead reveal" style="max-width:600px;margin:14px auto 0;font-size:16px;color:rgba(34,34,34,.65)">In the meantime, the only numbers on this site are our own &mdash; measured in our business, before we started MY AI Work.</p>
   </div>
 </section>
 
@@ -410,18 +426,37 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
       <div class="dash-row"><span>Payment reminders delivered</span><b>6</b></div>
       <div class="dash-row"><span>Leads that would have gone cold</span><b class="up">0 lost</b></div>
     </div>
-    <p class="reveal" style="text-align:center;margin-top:18px;font-size:13px;color:rgba(246,222,206,.55)">Illustrative example &mdash; this is the format of the report, not a live client's numbers.</p>
+    <p class="reveal" style="text-align:center;margin-top:18px;font-size:13px;color:rgba(246,222,206,.55)">Illustrative example &mdash; not a live client's numbers.</p>
   </div>
 </section>
 
+<!-- OWNER + PROOF -->
+<section id="owner" class="sec-beige">
+  <div class="wrap">
+    <div class="owner-grid">
+      <div class="owner-photo reveal">
+        <img id="ownerImg" alt="The owner of MY AI Work" onerror="this.closest('.owner-photo').classList.add('img-fallback')">
+      </div>
+      <div class="owner-copy reveal">
+        <p class="label">Who you are dealing with</p>
+        <h3>I'm not an AI salesman. I'm a business owner who got tired of being bottlenecked.</h3>
+        <p>I run a manufacturing business in Pune.</p>
+        <p>Every bottleneck on this site — the 9pm enquiry, the inconsistent follow-up, the owner-as-bottleneck — I have lived, measured, and closed in my own business first.</p>
+        <p>Only after the systems were working in my operation did I start MY AI Work.</p>
+        <p>So when we sit for an Operations Audit, it is not a consultant with a slide deck. It is one owner showing another owner what actually worked.</p>
+        <p class="owner-sign">— Founder, MY AI Work, Pune</p>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- WORKSHOP -->
 <section id="workshop">
   <div class="wrap">
     <div class="workshop-grid">
       <div class="reveal">
         <p class="label">The workshop</p>
-        <h2>"How I Closed Every Leak in My Business With AI"</h2>
-        <p class="lead">Not a course. Not a pitch. A business owner opening his own books — every leak we found in a real manufacturing business, and exactly how AI closed each one. Real numbers. Real screenshots.</p>
+        <h2>"How I Closed Every Bottleneck in My Business With AI"</h2>
+        <p class="lead">Not a course. Not a pitch. A business owner opening his own books — every bottleneck we found in a real manufacturing business, and exactly how AI closed each one. Real numbers. Real screenshots.</p>
         <p class="lead" style="margin-top:18px">Every attendee leaves with <strong>one working AI tool</strong> for their own business, at no cost. We would rather show you than tell you.</p>
       </div>
       <div class="workshop-card reveal">
@@ -442,7 +477,7 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
     <div class="filter-list">
       <div class="filter-item reveal"><div class="x">&#10005;</div><p>This is not a fit if you are looking for the cheapest option or want to negotiate every rupee. Our fees are set against the hours and leads you get back &mdash; not against the cheapest quote.</p></div>
       <div class="filter-item reveal"><div class="x">&#10005;</div><p>This is also not a fit if you want daily status calls or a long custom software project.</p></div>
-      <div class="filter-item reveal"><div class="x">&#10003;</div><p>We work best with owners who want the leak closed, want to stay in control, and prefer a clear fixed scope over endless work.</p></div>
+      <div class="filter-item reveal"><div class="x">&#10003;</div><p>We work best with owners who want the bottleneck closed, want to stay in control, and prefer a clear fixed scope over endless work.</p></div>
     </div>
     <p class="lead reveal" style="margin-top:40px">If that sounds like you, let's talk.</p>
   </div>
@@ -452,16 +487,17 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
 <section id="book" class="final">
   <div class="wrap-narrow">
     <p class="label reveal">Start here</p>
-    <h2 class="reveal">Find your leaks before your competitor finds theirs.</h2>
-    <p class="reveal">Request a Leak Audit. If we can't show where a business is losing time or money, we refund every rupee. That's how sure we are.</p>
-    <p class="reveal" style="font-size:14px;color:rgba(34,34,34,.6);margin-top:14px">After we confirm your slot, you&rsquo;ll receive a secure Razorpay payment link for the &#8377;9,999 refundable audit fee. You can pay by UPI, card, or netbanking. If we find no meaningful leaks, the full amount is refunded within 5&ndash;7 working days of written confirmation.</p>
+    <h2 class="reveal">Find your bottlenecks before your competitor finds theirs.</h2>
+    <p class="reveal">Book an Operations Audit. If we can't show where a business is losing time or money, we refund every rupee. That's how sure we are.</p>
+    <p class="reveal" style="font-size:14px;color:rgba(34,34,34,.6);margin-top:14px">After we confirm your slot, you&rsquo;ll receive a secure Razorpay payment link for the &#8377;9,999 refundable audit fee. You can pay by UPI, card, or netbanking. If we find no meaningful bottlenecks, the full amount is refunded within 5&ndash;7 working days of written confirmation.</p>
     <div class="hero-ctas reveal">
-      <a href="https://wa.me/918411000555?text=Hi%2C%20I%20would%20like%20to%20request%20a%20Leak%20Audit&utm_source=site&utm_medium=whatsapp&utm_campaign=leak_audit&utm_content=final_cta" class="btn btn-coral">Request an Audit on WhatsApp</a>
+      <a href="https://wa.me/918411000555?text=Hi%2C%20I%20would%20like%20to%20book%20an%20Operations%20Audit&utm_source=site&utm_medium=whatsapp&utm_campaign=operations_audit&utm_content=final_cta" class="btn btn-coral">Book an Audit on WhatsApp</a>
     </div>
+    <p class="reveal" style="font-size:13px;color:rgba(34,34,34,.5);margin-top:8px">We will confirm your exact slot manually on WhatsApp.</p>
     <p class="or-line reveal">or leave your details</p>
 
-    <form name="leak-audit" method="POST" data-netlify="true" netlify-honeypot="company-website" action="/thanks.html" class="lead-form reveal">
-      <input type="hidden" name="form-name" value="leak-audit">
+    <form name="operations-audit" method="POST" data-netlify="true" netlify-honeypot="company-website" action="/thanks.html" class="lead-form reveal">
+      <input type="hidden" name="form-name" value="operations-audit">
       <p class="hp"><label>Leave this empty: <input name="company-website"></label></p>
       <div class="fg">
         <label for="f-name">Your name</label>
@@ -476,18 +512,14 @@ footer a:hover{color:var(--coral);border-color:var(--coral)}
         <input id="f-phone" name="whatsapp" type="tel" required inputmode="tel" autocomplete="tel">
       </div>
       <div class="fg">
-        <label for="f-leak">What eats the most of your time right now?</label>
-        <textarea id="f-leak" name="leak" required></textarea>
+        <label for="f-bottleneck">What eats the most of your time right now?</label>
+        <textarea id="f-bottleneck" name="bottleneck" required></textarea>
       </div>
-      <button type="submit">Request the Leak Audit</button>
+      <button type="submit">Book the Operations Audit</button>
       <p class="form-note">We reply within one working day. Owners only — we don't sell to agencies or resellers.</p>
     </form>
 
-    <!-- GOOGLE CALENDAR WIRING: after Google Workspace is created, generate an
-         Appointment Schedule (calendar.google.com → Create → Appointment schedule,
-         availability 11:00–18:00 Mon–Sat, 20-min slots) and paste the embed/booking
-         link here. The receptionist agent will point qualified leads to this section. -->
-    <div id="calendar-slot" style="margin-top:56px"></div>
+    <p class="reveal" style="margin-top:40px;font-size:14px;color:rgba(34,34,34,.6)">A real person confirms a time that works for both of us &mdash; usually within one working day.</p>
     <p class="reveal" style="margin-top:28px;font-size:15px"><a href="mailto:hello@myaiwork.in" style="color:var(--green);font-weight:600">hello@myaiwork.in</a></p>
     <p class="reveal" style="margin-top:18px;font-size:14px;color:rgba(34,34,34,.55)">Calls available daily, 11:00 AM – 6:00 PM IST.</p>
   </div>
@@ -529,13 +561,14 @@ END TESTIMONIALS SECTION -->
   <div class="wrap">
     <div>
       <div class="f-logo">MY AI <em>Work</em></div>
-      <p style="margin-top:10px;max-width:300px">AI that closes business leaks.<br>Built by owners, for owners.</p>
+      <p style="margin-top:10px;max-width:300px">AI that closes business bottlenecks.<br>Built by owners, for owners.</p>
     </div>
     <div>
-      <p><a href="#leaks">The Leaks</a></p>
+      <p><a href="#bottlenecks">The Bottlenecks</a></p>
       <p style="margin-top:8px"><a href="#pricing">Pricing</a></p>
       <p style="margin-top:8px"><a href="/workshop">Workshop</a></p>
-      <p style="margin-top:8px"><a href="/leak-audit">The Leak Audit</a></p>
+      <p style="margin-top:8px"><a href="/insights">Insights</a></p>
+      <p style="margin-top:8px"><a href="/operations-audit">The Operations Audit</a></p>
       <p style="margin-top:8px"><a href="/whatsapp-ai-for-business">WhatsApp AI</a></p>
       <p style="margin-top:8px"><a href="/ai-for-business-owners">AI for Owners</a></p>
     </div>
@@ -557,7 +590,13 @@ END TESTIMONIALS SECTION -->
 
 <script>
 // load owner photo from base64 asset
-fetch('assets/photo.b64').then(r=>r.text()).then(t=>{document.getElementById('ownerImg').src='data:image/jpeg;base64,'+t.trim()});
+const ownerImgEl=document.getElementById('ownerImg');
+if(ownerImgEl){
+  fetch('assets/photo.b64')
+    .then(r=>{if(!r.ok)throw new Error('photo fetch failed');return r.text();})
+    .then(t=>{ownerImgEl.src='data:image/jpeg;base64,'+t.trim();})
+    .catch(()=>{ownerImgEl.closest('.owner-photo').classList.add('img-fallback');});
+}
 
 // nav scroll state
 const nav=document.getElementById('nav');
