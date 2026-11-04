@@ -1,6 +1,6 @@
 # MY AI Work — Official Website
 
-**We find where your business leaks time and money, and plug it with AI.**
+**We find where a business is bottlenecked, and close it with AI.**
 Built by a business owner, for business owners. Pune, India.
 
 A venture of **Stego Lifestyle LLP**.
